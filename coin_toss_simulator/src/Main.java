@@ -14,6 +14,6 @@ public class Main {
                 tail++;
             }
         }
-        System.out.println("Result :\n" + head + " heads\n" + tail + "tail");
+        System.out.printf("Result :\n%2d heads\n%2d tails",head,tail);
     }
 }
