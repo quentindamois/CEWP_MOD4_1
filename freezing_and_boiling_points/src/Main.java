@@ -7,38 +7,28 @@ public class Main {
         String boiling = "";
         String freezing = "";
         if(s.isEthylFreezing()) {
-            freezing += "Ethyl Alcohol ,";
+            freezing += "Ethyl Alcohol is freezing.";
         }
         else {
             if(s.isEthylBoiling()) {
-                boiling += "Oxygen ,";
+                boiling += "Ethyl Alcohol is boiling.";
             }
         }
         if(s.isOxygenFreezing()) {
-            freezing += "Oxygen ,";
+            freezing += "Oxygen is freezing.";
         }
         else {
             if(s.isOxygenBoiling()) {
-                boiling += "Oxygen ,";
+                boiling += "Oxygen is boiling";
             }
         }
         if(s.isWaterFreezing()) {
-            freezing += "Water ,";
+            freezing += "Water is freezing.";
         }
         else {
             if(s.isWaterBoiling()) {
-                boiling += "Water ,";
+                boiling += "Water is boiling";
             }
-        }
-        if (freezing != "") {
-            freezing = freezing[:-1];
-            freezing += "are freezing.";
-            System.out.println(freezing);
-        }
-        if(boiling != "") {
-            boiling = boiling[:-1];
-            boiling += "are boiling.";
-            System.out.println(boiling);
         }
     }
 }
