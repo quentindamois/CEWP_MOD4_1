@@ -36,13 +36,13 @@ public class Temperature {
      * @return a double coresponding to the temperature in ftemp converted to Celsius
      */
     public double getCelsius() {
-        return (5/9) * (ftemp - 32);
+        return (5.0/9.0) * (ftemp - 32.0);
     }
     /**
      * This method return the temperature stored in ftemp as a temperature in Kelvin.
      * @return a double coresponding to the temperature in ftemp converted to Kelvin
      */
     public double getKelvin() {
-        return ((5/9) * (ftemp - 32)) + 273;
+        return this.getCelsius() + 273.0;
     }
 }
