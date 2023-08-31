@@ -5,7 +5,7 @@ public class Main {
         System.out.println("Enter A temperature");
         Substance s = new Substance(input.nextDouble());
         if(s.isEthylFreezing()) {
-            System.out.printl("Ethyl Alcohol is freezing.");
+            System.out.println("Ethyl Alcohol is freezing.");
         }
         else {
             if(s.isEthylBoiling()) {
@@ -13,7 +13,7 @@ public class Main {
             }
         }
         if(s.isOxygenFreezing()) {
-            System.oiut.println("Oxygen is freezing.");
+            System.out.println("Oxygen is freezing.");
         }
         else {
             if(s.isOxygenBoiling()) {
