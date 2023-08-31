@@ -4,30 +4,28 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter A temperature");
         Substance s = new Substance(input.nextDouble());
-        String boiling = "";
-        String freezing = "";
         if(s.isEthylFreezing()) {
-            freezing += "Ethyl Alcohol is freezing.";
+            System.out.printl("Ethyl Alcohol is freezing.");
         }
         else {
             if(s.isEthylBoiling()) {
-                boiling += "Ethyl Alcohol is boiling.";
+                System.out.println("Ethyl Alcohol is boiling.");
             }
         }
         if(s.isOxygenFreezing()) {
-            freezing += "Oxygen is freezing.";
+            System.oiut.println("Oxygen is freezing.");
         }
         else {
             if(s.isOxygenBoiling()) {
-                boiling += "Oxygen is boiling";
+                System.out.println("Oxygen is boiling");
             }
         }
         if(s.isWaterFreezing()) {
-            freezing += "Water is freezing.";
+            System.out.println("Water is freezing.");
         }
         else {
             if(s.isWaterBoiling()) {
-                boiling += "Water is boiling";
+                System.out.println("Water is boiling");
             }
         }
     }
