@@ -2,8 +2,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter A temperature");
-        Substance s = new Substance(input.nextDouble());
+        Substance s;
+        do{
+            System.out.println("Enter A temperature:");
+            s = new Substance(input.nextDouble());
+            if(s.getTemperature() < -459.67){
+                System.out.println("Temperature too low!");
+            }
+        }while(s.getTemperature() < -459.67);
+
         if(s.isEthylFreezing()) {
             System.out.println("Ethyl Alcohol is freezing.");
         }
